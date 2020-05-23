@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/Microsoft/openshift-origin/azurestack-release-3.7/"
+			"value": "https://raw.githubusercontent.com/AymenMAMI/openshift-origin/azurestack-release-3.9"
 		},
 		"masterVmSize": {
 			"value": "Standard_DS2_v2"
@@ -18,13 +18,13 @@
 			"value": "unmanaged"
 		},
 		"openshiftClusterPrefix": {
-			"value": "changeme"
+			"value": "RFC"
 		},
 		"masterInstanceCount": {
-			"value": 3
+			"value": 1
 		},
 		"infraInstanceCount": {
-			"value": 3
+			"value": 1
 		},
 		"nodeInstanceCount": {
 			"value": 1
@@ -33,37 +33,37 @@
 			"value": 128
 		},
 		"adminUsername": {
-			"value": "changeme"
+			"value": "openshiftuser"
 		},
 		"openshiftPassword": {
-			"value": "changeme"
+			"value": "OpenSHIFT#2020"
 		},
 		"enableMetrics": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableLogging": {
-			"value": "false"
+			"value": "true"
 		},
 		"sshPublicKey": {
-			"value": "changeme"
+			"value": "AAAAB3NzaC1yc2EAAAABJQAAAQEAhWAk0S5BXstOgWe4Rl773EoZ2JflsDYgTQR/2YGUwkssmgRU+w5bFCi1S89FJ/QUcD9orsE8bg7eiXxwcYF584RLV7CTgho1OIJJoDEEeXXZco9ADUnDcTKpXeBxFZ6pjYvdaAs1i76Tv9j88lsflG9noNLGJ5xUFQHXN06FqEzt1WJmlaSYe82jjcGF17xPfUBfEKQHfVIWqNeUutWmtOXsSS9QzLFUq11Mv+yLc2aXfNXs+eE6+FKFkFNAT8UciEU4OQ/PJOCZI5Drrmij6MoWXGgw0yJnkdcYooHJx+FkvCGJNxI3hwmkqi6idLqRiVfaP6LxiGRmL1jJcpFhXw=="
 		},
 		"keyVaultResourceGroup": {
-			"value": "changeme"
+			"value": "OKD-KeyVault"
 		},
 		"keyVaultName": {
-			"value": "changeme"
+			"value": "okdkeyvault"
 		},
 		"keyVaultSecret": {
-			"value": "changeme"
+			"value": "sshprivatekey"
 		},
 		"enableAzure": {
 			"value": "false"
 		},
 		"defaultSubDomainType": {
-			"value": "nipio"
+			"value": "custom"
 		},
 		"defaultSubDomain": {
-			"value": "changeme"
+			"value": "xpressazure.tn"
 		}
 	}
 }

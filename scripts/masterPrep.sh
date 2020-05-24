@@ -21,7 +21,8 @@ yum -y update --exclude=WALinuxAgent
 yum -y update glusterfs-fuse
 
 echo $(date) " - Installing Ansible, pyOpenSSL and python-passlib"
-yum -y --enablerepo=epel install ansible-2.9.9-1 pyOpenSSL python-passlib
+yum -y --enablerepo=epel install pyOpenSSL python-passlib
+yum -y install https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.7.18-1.el7.ans.noarch.rpm
 
 # Install java to support metrics
 echo $(date) " - Installing Java"

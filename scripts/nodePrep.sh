@@ -18,7 +18,7 @@ yum -y update --exclude=WALinuxAgent
 yum -y update glusterfs-fuse
 
 echo $(date) " - Installing Ansible, pyOpenSSL and python-passlib"
-yum -y --enablerepo=epel install ansible-2.7.18-1 pyOpenSSL python-passlib
+yum -y --enablerepo=epel install ansible-2.6.2-1 pyOpenSSL python-passlib
 
 # Grow Root File System
 echo $(date) " - Grow Root FS"
